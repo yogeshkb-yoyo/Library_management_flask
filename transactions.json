@@ -1,0 +1,26 @@
+[
+    {
+        "book_id": 1,
+        "member_id": 2,
+        "transaction_type": "issue",
+        "transaction_date": "2023-07-15",
+        "due_date": "2023-07-29",
+        "rent_fee": 3.0
+    },
+    {
+        "book_id": 3,
+        "member_id": 1,
+        "transaction_type": "issue",
+        "transaction_date": "2023-07-20",
+        "due_date": "2023-08-03",
+        "rent_fee": 2.0
+    },
+    {
+        "book_id": 2,
+        "member_id": 3,
+        "transaction_type": "issue",
+        "transaction_date": "2023-07-23",
+        "due_date": "2023-08-06",
+        "rent_fee": 3.0
+    }
+]

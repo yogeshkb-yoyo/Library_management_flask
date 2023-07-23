@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transactions</h1>
+    <table>
+        <tr>
+            <th>Book ID</th>
+            <th>Member ID</th>
+            <th>Transaction Type</th>
+            <th>Transaction Date</th>
+            <th>Due Date</th>
+            <th>Rent Fee</th>
+        </tr>
+        {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.book_id }}</td>
+            <td>{{ transaction.member_id }}</td>
+            <td>{{ transaction.transaction_type }}</td>
+            <td>{{ transaction.transaction_date }}</td>
+            <td>{{ transaction.due_date }}</td>
+            <td>{{ transaction.rent_fee }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Home</a>
+</body>
+
+</html>

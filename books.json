@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Book 1",
+        "author": "Author A",
+        "genre": "Fiction",
+        "publication_year": 2020,
+        "stock_quantity": 4,
+        "rent_fee": 2.5
+    },
+    {
+        "id": 2,
+        "title": "Book 2",
+        "author": "Author B",
+        "genre": "Mystery",
+        "publication_year": 2018,
+        "stock_quantity": 3,
+        "rent_fee": 3.0
+    },
+    {
+        "id": 3,
+        "title": "Book 3",
+        "author": "Author C",
+        "genre": "Romance",
+        "publication_year": 2022,
+        "stock_quantity": 2,
+        "rent_fee": 2.0
+    }
+]

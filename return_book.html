@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Return Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="submit"] {
+            width: 300px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Return Book</h1>
+    <form action="/return_book" method="POST">
+        <label for="book_id">Book ID:</label>
+        <input type="text" id="book_id" name="book_id" required><br>
+        <label for="member_id">Member ID:</label>
+        <input type="text" id="member_id" name="member_id" required><br>
+        <label for="return_date">Return Date:</label>
+        <input type="date" id="return_date" name="return_date" required><br>
+        <label>Due Date:</label>
+        <input type="date" name="due_date" required><br>
+        <input type="submit" value="Return">
+    </form>
+    <a href="/">Home</a>
+</body>
+
+</html>
